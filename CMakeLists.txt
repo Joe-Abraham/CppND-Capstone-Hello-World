@@ -13,6 +13,7 @@ set(Boost_USE_STATIC_RUNTIME OFF)
 
 FIND_PACKAGE( Boost 1.80.0 COMPONENTS filesystem REQUIRED )
 INCLUDE_DIRECTORIES( ${Boost_INCLUDE_DIR} )
+include_directories(/usr/local/include)
 
 add_executable(HelloWorld src/main.cpp)
 
